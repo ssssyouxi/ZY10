@@ -1,0 +1,471 @@
+$blue: #203d99
+body 
+    color: #333
+    nav 
+        .logo
+            height: 80px
+            line-height: 80px
+            img 
+                vertical-align: middle
+                margin-right: 12px
+            button
+                margin-top: 35px
+        ul 
+            li
+                margin-left: 15px
+                a
+                    color: #000
+                    font-size: 1.25rem
+                    padding: 0 35px
+                    display: block
+                    &:hover,&.active,&:focus
+                        color: #fff
+                        background-color: $blue
+.section-title
+    text-align: center
+    font-size: 2.25rem
+    line-height: 2.25rem
+    font-family: Impact
+    margin: 20px 0 30px
+.img-center
+    margin: 0 auto
+#index 
+    .banner
+        overflow:hidden
+        img 
+            position: relative;
+            left: 50%;
+            -webkit-transform: translateX(-50%)
+
+    .index-pro
+        ul 
+            li 
+                &:hover,&:active,&:focus
+                    p 
+                        border-bottom: 5px solid $blue
+                        color: $blue
+                p 
+                    border-bottom: 5px solid #ebebeb
+                    padding-bottom: 1rem
+                    color: #7c7c7c
+    .index-case
+        ul
+            li
+                margin-bottom: 20px
+                p.title,p.intro 
+                    font-size: 1rem
+                    line-height: 30px
+                    margin-bottom: 0
+                p.title 
+                    color: #3d3d3d
+                    margin-top: 15px
+                p.intro 
+                    color: #ababab
+        a.more
+            display: block
+            height: 27px
+            width: 127px
+            margin: 0 auto
+            background-color: #fe0100
+            color: #fff
+            line-height: 27px
+            font-size: 1rem
+    .index-about 
+        margin-top: 30px
+        .intro
+            background: url("../img/index_about_bg.jpg") repeat-y center
+            padding-top: 40px
+            padding-bottom: 55px
+            p.title 
+                color: #fff
+                margin-bottom: 20px
+            p.content 
+                color: #fff
+                font-size: 1.125rem
+                line-height: 35px
+.contact
+    background-color: $blue
+    padding-top: 10px
+    ul 
+        li 
+            .mail,p
+                display: block
+                color: #fff
+                margin-top: 10px
+                margin-bottom: 30px
+#case
+    .case-case
+        ul
+            li
+                margin-bottom: 20px
+                p.title,p.intro 
+                    font-size: 1rem
+                    line-height: 30px
+                    margin-bottom: 0
+                p.title 
+                    color: #3d3d3d
+                    margin-top: 6px
+                p.intro 
+                    color: #ababab
+                div.hidden-div
+                    display: none
+                    position: absolute
+                    top: 0px
+                    height: 100%
+                    background-color: $blue
+                    opacity: 0.8
+                    width: 100%
+                    padding: 50px 30px
+                    color: #fff
+                    hr 
+                        margin-bottom: 15px
+                    p 
+                        margin: 0
+                    .more
+                        width: 80px
+                        height: 28px
+                        line-height: 28px
+                        font-size: 0.875rem
+                        border: 1px solid #fff
+                        margin-top: 15px
+    
+    .case-art
+        margin-top: 50px
+        .case-art-case
+            p.title 
+                font-size: 1.5rem
+            button 
+                height: 40px
+                color: #fff
+                border: none
+                border-radius: 0
+            button.online 
+                background-color: $blue
+                margin-bottom: 10px
+            button.msg 
+                background-color: #ff111e
+            .art-des 
+                margin-top: 35px
+                p.title 
+                    color: $blue
+                    font-size: 1.125rem
+                p.content 
+                    line-height: 2rem
+        .case-art-related
+            background-color: #f5f5f5
+            .related-title
+                font-size: 2.25rem
+                color: #595959
+                margin: 35px 0
+    .pager-prev.icon-angle-left,.pager-next.icon-angle-right,.pointer
+        display: none !important
+.banner-pro
+        margin-bottom: 30px
+        .pro 
+            margin-top: 45px
+            .dd li 
+                float: left
+                margin-right: 4px
+                width: 11px
+                height: 2px
+                background-color: #9b9b9b
+                &.active
+                    background-color: #ff0000
+            p.title 
+                font-size: 1.5rem
+                line-height: 40px
+            #left-button
+                height: 31px
+                width: 95px
+                border: 1px solid #c2c2c2
+                border-left: none
+                color: #e5543c
+                font-weight: bolder
+                position: relative
+                cursor: pointer
+                margin-top: 30px
+                margin-bottom: 30px
+                span 
+                    position: absolute
+                    right: 10px
+                    bottom: 1px
+                    font-size: 1.5rem
+            .pro-list li p
+                font-size: 1rem 
+                color: #262626
+#product
+    .banner-pro 
+        .pointer
+            display: none
+    .pro-list
+        margin-top: 50px
+        ul 
+            margin-top: 22px
+            li 
+                margin-bottom: 20px
+                &:hover a div
+                    background-color: #fff
+                    border: 2px dashed red
+                a 
+                    color: #333
+                    font-size: 1rem
+                    div 
+                        background-color: #f1f1f1
+                        height: 270px
+                        border: 2px dashed #f1f1f1
+                        img 
+                            margin: 0 auto
+    .pro-art
+        .pro-art-intro
+            margin-top: 50px
+            p.title 
+                font-size: 1.5rem
+            p.slogan
+                font-size: 1rem
+                color: #e60012
+            button
+
+                border: none
+                border-radius: 0
+                color: #fff
+                font-size: 1.125rem
+            button.chat 
+                background-color: #ff111c
+            button.msg 
+                background-color: $blue
+        .pro-art-ov
+            background-color: #ececec
+            .title
+                color: #ff111c
+                font-size: 1rem
+                margin-bottom: 0
+    .pro-art-learn
+        .learn-content
+            font-size: 1rem
+            line-height: 37px
+    .intro-title
+        font-size: 1.5rem
+    .pro-art-case
+        ul 
+            margin-top: 30px
+            li 
+                &:nth-child(even)
+                    margin-bottom: 30px 
+                img 
+                    width: 100%
+                div
+                    background-color: #c3c3c3
+                    color: #fff
+                    padding: 25px
+                    &:hover
+                        background-color: $blue
+                    p.title 
+                        font-size: 1.25rem
+                    p.intro
+                        font-size: 14px
+                        margin-bottom: 0
+                        line-height: 30px
+                        span   
+                            font-weight: bold
+    .pager-prev.icon-angle-left,.pager-next.icon-angle-right
+        display: none !important
+    .pointer 
+        display: none
+        li
+            color: $blue
+            border-color: $blue
+            &.active
+                background-color: $blue
+    .pro-case
+        ul 
+            li
+                p
+                    color: #333
+.list-form
+    margin-bottom: 60px
+    margin-top: 50px
+    input
+        height: 48px
+        width: 100%
+        border: 1px solid #d6d6d6
+        padding-left: 20px
+        margin-top: 20px
+    textarea 
+        width: 100%
+        height: 80px
+        border: 1px solid #d6d6d6
+        margin-top: 30px
+        padding-left: 20px
+    .submit 
+        input
+            padding: 0
+            background-color: #1f1f1f
+            color: #fff
+            border: 1px solid #1f1f1f
+
+.foot
+    padding-top: 25px
+    padding-bottom: 40px
+    a
+        color: #333
+    img 
+        margin-right: 15px
+    .title 
+        font-size: 1rem
+        margin-bottom: 10px
+    .list-unstyle ul 
+        list-style: none
+        li 
+            line-height: 30px
+            font-size: 0.875rem
+.bottom 
+    height: 52px
+    background-color: #ececec
+    line-height: 52px
+#fix_footer
+    height: 50px
+    border-top: 1px solid #EEE
+    display: block
+    position: fixed
+    bottom: 0
+    background-color: #fff
+    width: 100%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -moz-box-pack: justify
+    -ms-flex-pack: justify
+    -webkit-box-align: center
+    -moz-box-align: justify
+    -ms-flex-align: center
+    justify-content: space-between
+    align-content: center
+    a
+        color: #5D656B
+        -webkit-box-flex: 1
+        -moz-box-flex: 1
+        -webkit-flex: 1
+        -ms-flex: 1
+        flex: 1
+        text-align: center
+        box-sizing: border-box
+        display: block
+        font-size: 10px   
+        span
+            font-size: 20px
+            display: block
+            font-style: normal
+            width: 100%
+            top: 0
+            left: 0
+            padding-left:0 !important
+        p
+            font-size: 16px
+            margin: 0
+            padding: 0
+@media (max-width: 759px)
+    .ban1
+	    display: none
+    nav ul 
+        line-height: 35px
+    .sec1 .focus ul.tit li 
+        padding: 5px 0
+@media (min-width: 760px)
+	.ban2
+	    display: none
+	nav ul 
+        height: 80px
+        line-height: 80px
+@media(max-width: 999px)
+    .contact
+        margin-bottom: 50px
+    #product 
+        .pro-art
+            .pro-art-intro
+                button.chat 
+                    margin-bottom: 15px
+    .canshu 
+        overflow: scroll
+@media(min-width: 1000px) and (max-width: 1199px)
+    #product
+        .pro-art-case
+            ul 
+                li 
+                    div
+                        padding-top: 5px
+                        padding-bottom: 5px
+@media (min-width: 1000px)
+    nav ul li 
+        margin-left: 45px !important
+    #index .index-about
+        margin-bottom: 0
+
+    #case
+        .case-case
+            ul 
+    .list-form
+        margin-bottom: 20px
+    #product 
+        .pro-art
+            .pro-art-intro
+                button
+                    padding: 0 !important
+                    width: 150px
+                    height: 32px
+                button.chat 
+                    margin-right: 15px
+            .pro-art-case
+                li 
+                    margin-bottom: 30px
+                    
+@media (max-width: 1199px)
+	#index .banner img,#index .index-case img,#case .case-case img
+    	    width: 100%
+    
+
+@media (min-width: 1200px)
+    nav ul li 
+        margin-left: 80px !important
+    #case 
+        .case-case
+            ul
+                li
+                    .hidden-img
+                        height: 215px
+                        overflow: hidden
+                    &:hover
+                        p.title,p.intro 
+                            display: none
+                        .hidden-img
+                            height: 281px
+                        .hidden-div
+                            display: block
+    #product
+        .pro-case
+            ul 
+                li
+                    position: relative
+                    p
+                        display: none
+                        position: absolute
+                        width: 263px
+                        top: 0
+                        height: 200px
+                        margin: 0
+                        padding: 20px
+                        font-size: 1.125rem
+                        color: #fff
+                        opacity: 0.8
+                    &:hover 
+                        p 
+                            background-color: $blue
+                            display: block
+        .pointer 
+            display: block
+        .pro-art-case
+            ul 
+                li 
+                    div
+                        height: 270px
